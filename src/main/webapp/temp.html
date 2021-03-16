@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L19 Practice</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+</head>
+<body>
+    <header>ES6</header>
+
+    <script type="text/babel">
+        // ES6 / React / JSX code from here
+        let arr = [];
+        for (let i=0; i<2; i++) {
+            arr[i] = function () {
+                console.log(i);
+            }
+        }
+        console.log(arr);
+        for (let j=0; j<arr.length; j++) {
+            arr[j]();
+        }
+    </script>
+</body>
+</html>
